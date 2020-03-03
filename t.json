@@ -1,0 +1,4 @@
+[
+  (1, 1, '2020-02-26 18:30:20', 0, '{"adress": "Drottning Kristinas Väg 39","lghnr": "1021","name": "Ludwig Eriksson","phonenumber": "0761177269","on_date": "2020-02-26","perm_enter": 1,"comments": "Hela huset håller på att rasa vetetusan vad som händer"}'),
+  (2, 1, '2020-02-28 18:30:20', 0, '{"adress": "Slingvägen 16","lghnr": "1001","name": "Jenny Gustafsson","phonenumber": "0763081393","on_date": "2020-02-28","perm_enter": 1,"comments": "Dörren går inte att stänga...."}')
+]

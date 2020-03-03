@@ -1,0 +1,12 @@
+1 = Felanm
+2 = Intresse
+3 = Ombyggnadansökan
+
+
+
+########################
+Skriv ut
+  Save to PDF
+  Update status in DB
+  name = type_id_date.pdf # felanm_333_202003031739.pdf
+  
