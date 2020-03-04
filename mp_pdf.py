@@ -28,14 +28,18 @@ class MCLine(Flowable):
         """
         self.canv.line(0, self.height, self.width, self.height)
 def fel_build(data):
+    if data[4] == 1:
+        perm = "Ja"
+    else:
+        perm = "Nej"
     content = [
         ["Address", data[0]],
         ["Namn", data[1]],
         ["LGHNR", data[2]],
         ["Datum", data[3]],
-        ["Tillträde", data[4]],
-        ["Bedömning", data[5]]
+        ["Tillträde", perm]
     ]
+
 
     styles = getSampleStyleSheet()
     table = Table(content, colWidths=[125, '*'])
@@ -169,7 +173,7 @@ def int_build(data):
 
     return elems
 def create_pdf(adr, name, lghnr, date, access, cat, largeText, type):
-    fileName = 'pdf/{0}-{1}.pdf'.format(type, datetime.today().strftime('%Y%m%d%H%I%S'))
+    fileName = 'pdf/{0}-{2}-{1}-ny.pdf'.format(type, datetime.today().strftime('%Y%m%d%H%I%S'), name.replace(" ", "_").lower())
     pdf = SimpleDocTemplate(
     fileName,
     pagesize=letter
