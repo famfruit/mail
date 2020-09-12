@@ -1,6 +1,6 @@
 # Settings for portfolio import
-repo_name="email_to_pdf"
+repo_name='email_to_pdf'
 repo_type=python
-repo_display_image="python.svg"
+repo_display_image='python.svg'
 repo_show_code=true
 access_files=core.py,mp_ui.py
